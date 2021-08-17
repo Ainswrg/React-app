@@ -1,11 +1,10 @@
 import React from "react";
 
-const PostItem = ({post}) => {
+const PostItem = ({post, number}) => {
   return (
     <div className='post'>
       <div className='post__content'>
-        <strong>{post.id}</strong>
-        <div>{post.title}</div>
+        <strong>{number}. {post.title}</strong>
         <div>
           {post.body}
         </div>
